@@ -6,6 +6,7 @@ class Song
   @@genres = []
   @@songs = []
   @@g_count = {}
+  @@a_count = {}
   def initialize(name, artist, genre)
     @name = name
     @artist = artist
@@ -47,11 +48,18 @@ class Song
       end 
     end
     @@g_count
-  
   end
   
   def self.artist_count
-    #@@artists.each
+    @@artists.each do |a|
+      num = 1
+      if !@@a_count.has_key?(a)
+        @@a_count[a] = num
+      else
+        @@a_count[a] = num += 1
+      end
+    end
+    @@a_count
   end
   
  end 
