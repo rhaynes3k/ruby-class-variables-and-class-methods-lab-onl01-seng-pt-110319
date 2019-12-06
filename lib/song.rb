@@ -56,7 +56,7 @@ class Song
       if !@@a_count.has_key?(a)
         @@a_count[a] = num
       else
-        @@a_count[a] = num += 1
+        @@a_count[a] = num += 3
       end
     end
     @@a_count
