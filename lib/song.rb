@@ -43,7 +43,7 @@ class Song
       # {}
       # if there is not a key in the hash -> make the value 1
       num = 1
-      if !@@g_count.has_key(g)
+      if !@@g_count.has_key?(g)
         @@g_count[g] = num
       # if the key is already there we need to INCREMENT the value
       else @@g_count[g] = num += 1
