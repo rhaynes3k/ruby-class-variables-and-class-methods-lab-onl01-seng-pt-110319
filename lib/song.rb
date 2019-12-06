@@ -38,7 +38,6 @@ class Song
   end
   
   def self.genre_count
-    # ["rap", "pop", "pop]"
     @@genres.each do |g|
       num = 1
       if !@@g_count.has_key?(g)
@@ -51,8 +50,8 @@ class Song
   
   end
   
-#   def artist_count
-      @@artists.each
-#   end
+  def artist_count
+    #@@artists.each
+  end
   
  end 
