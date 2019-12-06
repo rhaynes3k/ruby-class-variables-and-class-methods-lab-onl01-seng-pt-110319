@@ -45,7 +45,7 @@ class Song
       if !@@g_count.has_key(g)
         @@g_count[g] = 1
       # if the key is already there we need to INCREMENT the value
-      else @@g_count[g] = 1 += 1
+      else @@g_count[g] = += 1
       end 
     end
     @@g_count
