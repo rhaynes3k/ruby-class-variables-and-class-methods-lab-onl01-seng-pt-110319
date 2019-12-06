@@ -42,9 +42,10 @@ class Song
     @@genres.each_with_index do |g, i|
       # {}
       # if there is not a key in the hash -> make the value 1
-      
+      if !@@g_count.has_key(g)
+        @@g_count[g] = 1
       # if the key is already there we need to INCREMENT the value
-      @@g_count[g] = 1
+      else @@g_count[g] = 1 += 1 
     end
     @@g_count
   
